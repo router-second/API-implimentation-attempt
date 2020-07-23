@@ -4,9 +4,9 @@ def calc_age(uid):
     cake=dict()
     stri='https://api.vk.com/method/friends.get?v=5.120&access_token=da9daaccda9daaccda9daacc8bdaee824cdda9dda9daacc8584977ab2b7f9f1e029bf22&fields=bdate&user_id='+str(uid)
     feedback = requests.get(stri)
-    for ant in feedback:
-        for pride in ant:
-            print ()
+    #for ant in feedback:
+        #for pride in ant:
+            #print ()
     for bdate in feedback["response"]["items"]:
                 a=list(int(cdate[bdate].split('.')))
                 if (a.len())<=int(2):
